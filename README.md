@@ -18,7 +18,7 @@ A privacy-first book request and donations platform serving incarcerated readers
 
 ---
 
-## 🗺️ Sitemap & Page Behaviours
+## 🗺️ Key Features
 
 ### Public
 
