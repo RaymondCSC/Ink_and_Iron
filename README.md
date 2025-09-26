@@ -1,103 +1,81 @@
-# Ink_and_Iron
-https://utoronto.zoom.us/j/85043206116
-
-Meeting ID: 850 4320 6116
-Passcode: 202509
-
 # Ink & Iron
 
-A privacy-first book request and donations platform serving incarcerated readers across Canada. Built for transparency, speed, and strict facility-rule compliance.
+> _Note:_ This document is intended to be relatively short. Be concise and precise. Assume the reader has no prior knowledge of your application and is non-technical. 
 
----
+## Partner Intro
+* Partner Name(s): Rafiq Omair, Caroline Therence
+* Contact(s): rafiq.omair@mail.utoronto.ca, c.tejowinoto@mail.utoronto.ca, Titles, Primary/Secondary contact roles> !!!!!!!!
+* Description: <Brief description of the partner organization in 2–4 lines. What they do, who they serve, and why they matter.>
 
-## ✨ At a Glance
+## Description about the project
+Ink & Iron is an application designed to connect incarcerated individuals with reading materials by streamlining the book request and donation process.  
+We aim to solve the problem of accessibility to books in correctional facilities, where requests are often lost in bureaucracy or denied due to unclear facility rules.  
 
-- **Public**: Home · Request Books · Track Request · Facility Directory · Donate · FAQ · Contact · Policies (EN/FR)
-- **Private**: Volunteer workspace · Admin console
-- **Core promise**: Simple requests, automatic rule checks, fast fulfillment, crystal-clear status tracking.
+## Key Features
+* **Home Page**  
+  Mission statement, CTAs for “Request Books” & “Donate,” 3-step “How it works” cards, impact counters, and partner logos.  
 
----
+* **Request Books**  
+  Request form (recipient name, inmate ID, facility autocomplete, genres/titles, consent).  
+  Live rule checks from facility directory.  
+  Success screen with public request ID and privacy notice.  
 
-## 🗺️ Key Features
+* **Track Request**  
+  Track status using public request ID + last name.  
+  Timeline states: Received → Matched → Shipped → Delivered/Refused.  
+  If shipped, shows carrier and tracking. If refused, displays reason and next steps.  
 
-### Public
+* **Facility Directory**  
+  Search and filters (province, paperback-only, last verified).  
+  Facility cards with address, rules, contact, last verified date.  
+  Facility detail pages for full rules.  
 
-- **Home**
-  - Hero with mission + “Request Books” / “Donate” CTAs  
-  - How-it-works (3 steps), live impact counters (fulfilled, avg days), partner logos  
-  - Language toggle (EN/FR)
+* **Donate**  
+  Books: wishlist + pledge form.  
+  Funds: Stripe checkout with thank-you page.  
 
-- **Request Books**
-  - Form fields: full name, inmate ID#, facility (autocomplete), unit (opt), genres/titles, notes, consent ✅  
-  - **Live facility rule checks** (paperback-only, max items, prohibited genres)  
-  - Success screen: **Public Request ID** + link to **Track Request**  
-  - Privacy blurb (what we store & duration)
+* **FAQ & Contact**  
+  FAQs organized by topics with anchor links.  
+  Contact form with response-time notes and alternative email.  
 
-- **Track Request**
-  - Inputs: Public Request ID + last name  
-  - Timeline: _Received → Matched → Shipped → Delivered/Refused_  
-  - If **Shipped**: carrier + tracking number  
-  - If **Refused**: short reason + “What to try next”
+* **Volunteer Portal (Private)**  
+  Volunteer login with queue of incoming requests.  
+  Claim/unclaim, view details, update statuses.  
+  Match from inventory or add to purchase list.  
 
-- **Facility Directory**
-  - Search + filters (province, paperback-only, last-verified date)  
-  - Card view: mailing address, rules summary, contact, last verified  
-  - Detail page with full rules & change history snapshot
+* **Admin Portal (Private)**  
+  Dashboard with KPIs, request and facility management, CRUD inventory, donations, user roles, audit logs.  
 
-- **Donate**
-  - Tabs: **Books** (dynamic wishlist + pledge) · **Funds** (Stripe one-time)  
-  - Thank-you screen on completion
+## Instructions
+* **Accessing the application:** Register through our website 
+* **Requesting Books:** Navigate to *Request Books* → fill out form → receive Request ID → use *Track Request* to check progress.  
+* **Donating Books/Funds:** Navigate to *Donate* → choose Books or Funds → follow pledge or Stripe checkout.  
+* **Tracking Requests:** Go to *Track Request* → enter Request ID + last name → view status.  
+* **Facility Directory:** Navigate to *Facilities* → search/filter → click card for detail.  
+* **Volunteer Use:** Log in → access queue → claim/unclaim requests → update request status.  
+* **Admin Use:** Log in → dashboard → manage requests, facilities, inventory, donations, and users.  
 
-- **FAQ**
-  - Sections: Requesting · Donations · Facility Rules · Privacy & Data  
-  - Anchor links for quick jump
+## Development requirements
+* **Requirements:** <OS requirements, dependencies (Node, Python, etc.), package managers, libraries>  
+* **Setup:**  
+  1. Clone repository: `git clone https://github.com/RaymondCSC/Ink_and_Iron.git`  
+  2. Install dependencies: `To be done in future one coding started`  
+  3. Configure environment: `To be done in future one coding started`  
+  4. Run application: `To be done in future one coding started`  
+* **Notes:** <Any special setup steps like database, API keys, Stripe test keys, etc. To be done in future one coding started>  
 
-- **Contact**
-  - Form (name, email, message type) + response-time note + alt email
+## Deployment and Github Workflow
+* We use feature branches (`feature/<name>`), which are merged into `dev` after peer review.  
+* Pull requests are submitted from `feature/<name>` → `dev`, reviewed by at least one teammate.  
+* Once tested, `dev` merges into `main` for production deployment.  
+* Deployment is handled via (Some one fill this) with automated pipelines.  !!!!!!!!!!!!!!!!!!!
+* Workflow justification: This prevents conflicts, ensures code review, and keeps production stable while allowing parallel development.  
 
-- **Policies**
-  - Privacy · Terms of Use · Accessibility
+## Coding Standards and Guidelines
+* We follow consistent naming conventions, clear comments, and linting standards to maintain readability and long-term maintainability.  
+* Code reviews ensure style and functionality consistency across the team.  
 
-- **Errors**
-  - 404 / fallback with helpful links (Home, Request, Track)
-
-### Private (Role-Based)
-
-- **Volunteer**
-  - Login (NextAuth email/password), Forgot password  
-  - **Queue**: table of incoming requests (age, facility, genres); filters (facility, age, flagged); actions: Claim/Unclaim, View  
-  - **Request Detail**: PII-minimized summary, inline facility rules, actions:
-    - Match from Inventory (search title/genre)
-    - Add to Purchase List
-    - Generate Packing List (PDF)
-    - Enter Tracking (carrier + #)
-    - Update status: Matched/Shipped/Delivered/Refused (+ reason)
-  - **Inventory (read / limited write)**: search title, author, format, qty; propose admin update
-
-- **Admin**
-  - **Dashboard**: KPIs (open requests, avg fulfillment time, refusal rate)  
-  - **Requests**: full list, edit states  
-  - **Facilities**: list + Add/Edit (name, address, province, contact, rules JSON, last verified) + version history  
-  - **Inventory**: CRUD (title, author, format, condition, genre, bin, qty)  
-  - **Donations**: Stripe logs + book pledges; mark received  
-  - **Users & Roles**: add/remove volunteers, set roles, force PW reset  
-  - **Audit Log**: who/what/when (entity, action, diff)
-
----
-
-## 🧱 Tech Stack (opinionated)
-
-- **Web**: Next.js 14, TypeScript, React Server Components, i18n (EN/FR)
-- **UI**: Tailwind CSS, Radix UI, shadcn/ui
-- **Forms**: React Hook Form + Zod
-- **Auth**: NextAuth (email/password; role-based guards)
-- **DB**: Postgres + Prisma (Row-Level Security optional)
-- **Payments**: Stripe (donations)
-- **Docs/PDF**: server-rendered packing lists (PDFKit)
-- **Jobs/Queues**: lightweight job runner (e.g., Inngest or custom CRON) for reminders & nightly rule verifications
-- **Infra**: Vercel (web) + Neon/Supabase (Postgres) + Stripe + Resend (email)
-
-> Swap components to match your environment if needed.
-
----
-
+## Licenses
+* License type: <MIT / Apache 2.0 / GPL / etc.>  We don't know yet?????? !!!!!!!!!!!!!
+* This allows <freedom of modification, commercial use, etc. depending on license>.  
+* We chose this license to ensure accessibility and flexibility for both developers and end-users.  
