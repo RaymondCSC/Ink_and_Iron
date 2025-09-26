@@ -881,7 +881,7 @@ While we (the student team) are encouraged to show our work publicly (e.g., on r
 
 #### Q6: Have you met with your team?
 
-Yes — we had a team-building exercise on Discord where we played an online game of Uno together.  
+Yes — we had a team-building exercise on Zoom where we played an online game of agar.io together.  
 This was a relaxed and fun way to bond outside of coursework, and it helped us get to know each other on a more personal level while sharing some laughs.  
 
 ![Team Building Photo](TeamBuilding.JPG)  
