@@ -6,7 +6,7 @@
  
 #### Q1: What is the product?
 
-Ink & Iron is a web application that makes literature and educational resources accessible to incarcerated individuals across Canada by streamlining how donated books are collected, catalogued, approved by facilities, and delivered <span style="color:red">Qianfeng: not sure whether to include delivery here, like what we discussed, would a map be included?</span>, while giving donors and volunteers transparent, privacy respecting ways to contribute.
+Ink & Iron is a web application that makes literature and educational resources accessible to incarcerated individuals across Canada by streamlining how donated books are collected, catalogued, approved by facilities, and delivered, while giving donors and volunteers transparent, privacy respecting ways to contribute.
 
 
 **Problems**: 
@@ -27,7 +27,7 @@ A minimal but usable MVP web application (backend + frontend) with:
   * **Volunteer portal** to claim tasks (packaging, delivery), track hours, and view assignments.  
   * **Facility staff form** for submitting requests on behalf of incarcerated individuals, with an approve/decline workflow.  
   * **Donation intake** to register donated books and attribute them to donors.  
-  * **Basic delivery tracking** through a simple status lifecycle: _Received → Packed → Shipped → Delivered/Rejected_.  <span style="color:red">some concern about the delivery system, do not want to make this to complex</span>
+  * **Basic delivery tracking** through a simple status lifecycle: _Received → Packed → Shipped → Delivered/Rejected_.  
 
 
 <section id="q1-feature-map" style="margin:18px 0;border:1px solid #e6e8eb;border-radius:14px;background:#fff;max-width:100%;overflow-x:auto;">
@@ -884,14 +884,13 @@ While we (the student team) are encouraged to show our work publicly (e.g., on r
 Yes — we had a team-building exercise on Discord where we played an online game of Uno together.  
 This was a relaxed and fun way to bond outside of coursework, and it helped us get to know each other on a more personal level while sharing some laughs.  
 
-![Team Building Placeholder](lalalala)  
-<span style="color:red">Placeholder image — replace with actual screenshot/evidence before submission.</span> 
+![Team Building Photo](TeamBuilding.JPG)  
 
-<span style="color:red">to be reviewed by the team before final submission</span> \
+
 **Three Fun Facts:**  
-1. One of our teammates was a goldfish.  
-2. One of our teammates talks to socks  
-3. One of our teammates eats cereal with soda
+1.  David has eaten live scorpions.
+2. Andy is a good driver.
+3. Qianfeng has eaten crocodile.
 
 #### Q7: What are the roles & responsibilities on the team?
 
@@ -901,34 +900,32 @@ Team Members:
 - Runtong Liang  
 - Heidi Wang (Team Coordinator / Partner Liaison)  
 - Richard Chen  
-- Qianfeng Wen  
-
-<span style="color:red">⚠️ NOTE: The following assignments are placeholders. Each teammate must review and confirm their actual roles and responsibilities before submission.</span>  
+- Qianfeng Wen\
 
 **Roles & Responsibilities**
 
 - **David Groshens — Backend Developer (Inventory Management)**  
-  - *Responsibilities*: Designs and implements API endpoints for inventory management and request lifecycle. Ensures backend logic supports facility constraints.  
-  - *Why this role*: Has prior backend coursework experience; interested in system design and handling data flow.  
+  - *Responsibilities*:  Designs and implements API endpoints for inventory management and email management. Ensures backend logic supports constraints.  
+  - *Why this role*: Has prior backend coursework experience; interested in system design and have previously worked a lot with API’s.  
 
 - **Andy Ren — Backend Developer (Volunteer Task Queue)**  
   - *Responsibilities*: Focuses on volunteer task queue APIs and status update endpoints. Works with David to ensure consistency across backend modules.  
-  - *Why this role*: Enjoys backend problem solving and wants to strengthen skills in API development.  
+  - *Why this role*: Enjoys backend problem solving and wants to strengthen skills in API development.
 
-- **Runtong Liang — Backend Developer (QA & Integration)**  
+- **Runtong Liang — Front End Developer, Partner Liaison + Frontend Developer (Public Pages) (Tracking pages)(Directory Page)**  
   - *Responsibilities*: Oversees testing strategy, deployment setup, and integration between frontend and backend. Provides backend support where needed.  
   - *Why this role*: Keen to learn more about DevOps/integration practices; balances backend contribution with testing focus.  
 
 - **Heidi Wang — Team Coordinator / Partner Liaison + Frontend Developer (Volunteer Dashboard & Requests)**  
-  - *Responsibilities*: Organizes team communication, liaises with the partner and TA, ensures deliverables are tracked/submitted on time. Builds frontend UI for the volunteer task dashboard and request submission forms.  
-  - *Why this role*: Strong interest in frontend development and coordination; volunteered to take on the communication lead role.  
+  - *Responsibilities*: Coordinates team logistics, manages partner/TA communication, and ensures deliverables are on track. On the development side, work on the volunteer dashboard and request submission UI, making sure it is simple and intuitive for users.
+  - *Why this role*: I enjoy organizing and leading projects, and since I want to move toward management career-wise, Also want to strengthen my frontend skills by building meaningful interfaces.
 
 - **Richard Chen — Frontend Developer (Donor Intake & Admin Dashboard)**  
-  - *Responsibilities*: Focuses on donor intake forms and admin dashboard UI components. Works closely with Heidi to align frontend design consistency.  
-  - *Why this role*: Interested in improving frontend skills and has some prior experience with React.  
+  - *Responsibilities*: Focuses on donor intake forms and admin dashboard UI components. Works closely with Heidi and Raymond to align frontend design consistency.
+  - *Why this role*: Interested in improving frontend skills and has some prior experience with React. 
 
 - **Qianfeng Wen — Backend Developer (Database & Rules)**  
-  - *Responsibilities*: Designs and manages database schema for books, requests, donors, and volunteers. Works with backend team to optimize queries and enforce rules.  
+  - *Responsibilities*: Designs and manages database schema for books, requests, donors, and volunteers. Works with the backend team to optimize queries and enforce rules.
   - *Why this role*: Interested in database management; brings strong SQL knowledge.  
 
   
