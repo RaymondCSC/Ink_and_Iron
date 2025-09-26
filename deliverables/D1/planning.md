@@ -29,147 +29,12 @@ A minimal but usable MVP web application (backend + frontend) with:
   * **Donation intake** to register donated books and attribute them to donors.  
   * **Basic delivery tracking** through a simple status lifecycle: _Received → Packed → Shipped → Delivered/Rejected_.  
 
-
-<section id="q1-feature-map" style="margin:18px 0;border:1px solid #e6e8eb;border-radius:14px;background:#fff;max-width:100%;overflow-x:auto;">
-  <div style="background:linear-gradient(90deg,#6f42c1,#7c3aed);color:#fff;padding:12px 16px;border-radius:14px 14px 0 0;font-weight:800;">
-    MVP Feature Map
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;padding:14px;">
-    <div style="border:1px solid #e6e8eb;border-radius:12px;padding:12px;background:#fafaff;min-width:240px;">
-      <div style="font-weight:800;color:#7c3aed;margin-bottom:8px;">Admin</div>
-      <ul style="margin:0;padding-left:18px;list-style-type:disc;">
-        <li style="margin:4px 0;">Inventory management (add/list/filter)</li>
-        <li style="margin:4px 0;">Request review (approve/decline)</li>
-        <li style="margin:4px 0;">Match books to requests</li>
-        <li style="margin:4px 0;">Audit notes & history</li>
-      </ul>
-    </div>
-    <div style="border:1px solid #e6e8eb;border-radius:12px;padding:12px;min-width:240px;">
-      <div style="font-weight:800;color:#7c3aed;margin-bottom:8px;">Volunteer</div>
-      <ul style="margin:0;padding-left:18px;list-style-type:disc;">
-        <li style="margin:4px 0;">Task queue (claim & complete)</li>
-        <li style="margin:4px 0;">Basic hours log</li>
-        <li style="margin:4px 0;">Shipping updates</li>
-      </ul>
-    </div>
-    <div style="border:1px solid #e6e8eb;border-radius:12px;padding:12px;min-width:240px;">
-      <div style="font-weight:800;color:#7c3aed;margin-bottom:8px;">Facility Staff Form</div>
-      <ul style="margin:0;padding-left:18px;list-style-type:disc;">
-        <li style="margin:4px 0;">Submit on behalf of inmate</li>
-        <li style="margin:4px 0;">Track status: Requested → Approved/Declined → Fulfilled</li>
-      </ul>
-    </div>
-    <div style="border:1px solid #e6e8eb;border-radius:12px;padding:12px;min-width:240px;">
-      <div style="font-weight:800;color:#7c3aed;margin-bottom:8px;">Delivery Tracking</div>
-      <ul style="margin:0;padding-left:18px;list-style-type:disc;">
-        <li style="margin:4px 0;">Lifecycle: Received → Packed → Shipped → Delivered/Rejected</li>
-        <li style="margin:4px 0;">Optional tracking number</li>
-        <li style="margin:4px 0;">Reason required on rejection</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-
-<section id="q1-value-flow" style="margin:18px 0;border:1px solid #e6e8eb;border-radius:14px;background:#fff;max-width:100%;overflow-x:auto;">
-  <div style="background:linear-gradient(90deg,#6f42c1,#7c3aed);color:#fff;padding:12px 16px;border-radius:14px 14px 0 0;font-weight:800;">
-    Value Flow — Ink & Iron MVP
-  </div>
-  <div style="padding:14px;">
-    
-  <!-- Main Flow -->
-  <div style="margin-bottom:20px;">
-    <h4 style="color:#7c3aed;margin-bottom:12px;font-size:16px;">Main Process Flow</h4>
-    <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
-      <div style="border:1px solid #e6e8eb;border-radius:10px;padding:10px;min-width:140px;"><b>Donors / Bookstores</b><div style="color:#57606a;font-size:13px;">Donate books</div></div>
-      <div style="color:#7c3aed;font-weight:bold;">→</div>
-      <div style="border:1px solid #e6e8eb;border-radius:10px;padding:10px;background:#fafaff;min-width:140px;"><b>Inventory & Intake</b><div style="color:#57606a;font-size:13px;">Add books, track availability</div></div>
-      <div style="color:#7c3aed;font-weight:bold;">→</div>
-      <div style="border:1px solid #e6e8eb;border-radius:10px;padding:10px;min-width:140px;"><b>Match / Allocate</b><div style="color:#57606a;font-size:13px;">Assign books to approved requests</div></div>
-      <div style="color:#7c3aed;font-weight:bold;">→</div>
-      <div style="border:1px solid #e6e8eb;border-radius:10px;padding:10px;min-width:140px;"><b>Pack</b><div style="color:#57606a;font-size:13px;">Packing task for volunteers</div></div>
-      <div style="color:#7c3aed;font-weight:bold;">→</div>
-      <div style="border:1px solid #e6e8eb;border-radius:10px;padding:10px;min-width:140px;"><b>Ship → Deliver/Reject</b><div style="color:#57606a;font-size:13px;">Tracking #, reason on reject</div></div>
-    </div>
-  </div>
-
-  <!-- Volunteer Flow -->
-  <div style="margin-bottom:20px;">
-    <h4 style="color:#7c3aed;margin-bottom:12px;font-size:16px;">Volunteer Flow</h4>
-    <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
-      <div style="border:1px solid #e6e8eb;border-radius:10px;padding:10px;min-width:140px;"><b>Volunteers</b><div style="color:#57606a;font-size:13px;">Pack, pick‑up, drop‑off</div></div>
-      <div style="color:#7c3aed;font-weight:bold;">→</div>
-      <div style="border:1px solid #e6e8eb;border-radius:10px;padding:10px;background:#fafaff;min-width:140px;"><b>Task Queue</b><div style="color:#57606a;font-size:13px;">Claim & complete tasks</div></div>
-      <div style="color:#7c3aed;font-weight:bold;">→</div>
-      <div style="border:1px dashed #e6e8eb;border-radius:10px;padding:10px;color:#57606a;min-width:140px;"><b>Allocate / Pack</b><div style="font-size:13px;">Flow continues with packing</div></div>
-      <div style="color:#7c3aed;font-weight:bold;">→</div>
-      <div style="border:1px dashed #e6e8eb;border-radius:10px;padding:10px;color:#57606a;min-width:100px;"><b>Ship</b></div>
-    </div>
-  </div>
-
-  <!-- Facility Staff Flow -->
-  <div>
-    <h4 style="color:#7c3aed;margin-bottom:12px;font-size:16px;">Facility Staff Flow</h4>
-    <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
-      <div style="border:1px solid #e6e8eb;border-radius:10px;padding:10px;min-width:140px;"><b>Facility Staff</b><div style="color:#57606a;font-size:13px;">Proxy for incarcerated users</div></div>
-      <div style="color:#7c3aed;font-weight:bold;">→</div>
-      <div style="border:1px solid #e6e8eb;border-radius:10px;padding:10px;background:#fafaff;min-width:140px;"><b>Request Intake</b><div style="color:#57606a;font-size:13px;">Submit on behalf of inmate</div></div>
-      <div style="color:#7c3aed;font-weight:bold;">→</div>
-      <div style="border:1px solid #e6e8eb;border-radius:10px;padding:10px;min-width:140px;"><b>Approve / Decline</b><div style="color:#57606a;font-size:13px;">Policy‑aware decision</div></div>
-      <div style="color:#7c3aed;font-weight:bold;">→</div>
-      <div style="border:1px dashed #e6e8eb;border-radius:10px;padding:10px;color:#57606a;min-width:100px;"><b>Allocate</b></div>
-      <div style="color:#7c3aed;font-weight:bold;">→</div>
-      <div style="border:1px dashed #e6e8eb;border-radius:10px;padding:10px;color:#57606a;min-width:100px;"><b>Pack / Ship</b></div>
-    </div>
-  </div>
-    
-  </div>
-</section>
-
-
-<section id="q1-journey" style="margin:18px 0;border:1px solid #e6e8eb;border-radius:14px;background:#fff;max-width:100%;overflow-x:auto;">
-  <div style="background:linear-gradient(90deg,#6f42c1,#7c3aed);color:#fff;padding:12px 16px;border-radius:14px 14px 0 0;font-weight:800;">
-    Facility‑Submitted Request — Journey
-  </div>
-  <div style="padding:16px;">
-    <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
-      <div style="flex:1;min-width:200px;border:1px solid #e6e8eb;border-radius:12px;padding:12px;background:#fafaff;">
-        <div style="font-weight:700;color:#7c3aed;margin-bottom:8px;">1. Submit</div>
-        <ul style="margin:0;padding-left:18px;list-style-type:disc;">
-          <li style="margin:4px 0;">Enter inmate ref/ID (minimized)</li>
-          <li style="margin:4px 0;">Subject/needs & facility constraints</li>
-        </ul>
-      </div>
-      <div style="color:#7c3aed;font-weight:bold;font-size:18px;">→</div>
-      <div style="flex:1;min-width:200px;border:1px solid #e6e8eb;border-radius:12px;padding:12px;">
-        <div style="font-weight:700;color:#7c3aed;margin-bottom:8px;">2. Decide & Allocate</div>
-        <ul style="margin:0;padding-left:18px;list-style-type:disc;">
-          <li style="margin:4px 0;">Approve / decline with reason</li>
-          <li style="margin:4px 0;">Match books from inventory</li>
-        </ul>
-      </div>
-      <div style="color:#7c3aed;font-weight:bold;font-size:18px;">→</div>
-      <div style="flex:1;min-width:200px;border:1px solid #e6e8eb;border-radius:12px;padding:12px;">
-        <div style="font-weight:700;color:#7c3aed;margin-bottom:8px;">3. Fulfill</div>
-        <ul style="margin:0;padding-left:18px;list-style-type:disc;">
-          <li style="margin:4px 0;">Create pack task</li>
-          <li style="margin:4px 0;">Volunteer claims & packs</li>
-          <li style="margin:4px 0;">Ship with optional tracking</li>
-        </ul>
-      </div>
-      <div style="color:#7c3aed;font-weight:bold;font-size:18px;">→</div>
-      <div style="flex:1;min-width:200px;border:1px solid #e6e8eb;border-radius:12px;padding:12px;">
-        <div style="font-weight:700;color:#7c3aed;margin-bottom:8px;">4. Complete</div>
-        <ul style="margin:0;padding-left:18px;list-style-type:disc;">
-          <li style="margin:4px 0;">Delivered / Rejected (note required)</li>
-          <li style="margin:4px 0;">Audit & basic reporting</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
+![MVP Feature Map](./figs/q1-feature-map.svg)
+![Value Flow — Main Process](./figs/q1-value-flow.svg)
+![Facility-Submitted Request — Journey](./figs/q1-journey.svg)
+![Volunteer Journey — Claim to Complete](./figs/q1-journey-volunteer.svg)
+![Donation Journey — Pledge to Inventory](./figs/q1-journey-donation.svg)
+![Delivery Journey — Pack to Outcome](./figs/q1-journey-delivery.svg)
 
 
 **Examples of how the system will be used**:
@@ -181,119 +46,14 @@ A minimal but usable MVP web application (backend + frontend) with:
 - **Facility staff scenario**: A staff member at a correctional facility submits a request on behalf of an incarcerated individual—for example, “introductory welding” or “Canadian history.” They receive a clear approval decision and an estimated shipment timeline.
 
 
+![Admin Dashboard](./figs/admin-dashboard-ui.svg)
 
+![Volunteer Tasks](./figs/volunteer-tasks.svg)
 
-<div style="font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif; max-width:1100px; margin:24px auto; color:#0b0c0d;">
-  <h2 style="margin:0 0 12px;">Admin Dashboard</h2>
-  <p style="margin:0 0 20px; color:#4b5563;">MVP overview of inventory, requests, tasks, and shipments.</p>
+![Submit a Request](./figs/submit-request.svg)
 
-  <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px;">
-    <div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:16px; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
-      <div style="font-size:12px; color:#6b7280;">Inventory</div>
-      <div style="font-size:28px; font-weight:700;">1,284</div>
-      <div style="font-size:12px; color:#6b7280;">Books in stock</div>
-    </div>
-    <div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:16px; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
-      <div style="font-size:12px; color:#6b7280;">Open Requests</div>
-      <div style="font-size:28px; font-weight:700;">76</div>
-      <div style="font-size:12px; color:#6b7280;">Awaiting assignment</div>
-    </div>
-    <div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:16px; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
-      <div style="font-size:12px; color:#6b7280;">Volunteer Tasks</div>
-      <div style="font-size:28px; font-weight:700;">23</div>
-      <div style="font-size:12px; color:#6b7280;">Open</div>
-    </div>
-    <div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:16px; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
-      <div style="font-size:12px; color:#6b7280;">Shipments</div>
-      <div style="font-size:28px; font-weight:700;">12</div>
-      <div style="font-size:12px; color:#6b7280;">In transit</div>
-    </div>
-  </div>
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px;">
-    <div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:16px;">
-      <h3 style="margin:0 0 8px; font-size:16px;">Recent Requests</h3>
-      <ul style="margin:0; padding-left:18px; color:#374151;">
-        <li>“Introductory welding” — Facility A — <strong>Pending</strong></li>
-        <li>“Canadian history (beginner)” — Facility B — <strong>Approved</strong></li>
-        <li>“GED math prep” — Facility C — <strong>Pending</strong></li>
-      </ul>
-    </div>
-    <div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:16px;">
-      <h3 style="margin:0 0 8px; font-size:16px;">Shipment Status (MVP)</h3>
-      <div style="display:flex; gap:8px; align-items:center;">
-        <span style="padding:6px 10px; border-radius:999px; background:#eef2ff;">Received</span>
-        <span style="padding:6px 10px; border-radius:999px; background:#e0f2fe;">Packed</span>
-        <span style="padding:6px 10px; border-radius:999px; background:#ecfeff;">Shipped</span>
-        <span style="padding:6px 10px; border-radius:999px; background:#ecfdf5;">Delivered</span>
-        <span style="padding:6px 10px; border-radius:999px; background:#fef2f2;">Rejected</span>
-      </div>
-    </div>
-  </div>
-</div>
+![Donation Intake](./figs/donation-intake.svg)
 
-<div style="font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif; max-width:900px; margin:24px auto;">
-  <h2 style="margin:0 0 8px;">Volunteer Tasks</h2>
-  <p style="margin:0 0 16px; color:#4b5563;">Claim a task and log your time.</p>
-
-  <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:12px;">
-    <div style="border:1px solid #e5e7eb; border-radius:12px; padding:12px; background:#fff;">
-      <div style="font-weight:600;">Pack 10 books</div>
-      <div style="font-size:12px; color:#6b7280;">Facility A · Friday</div>
-      <button style="margin-top:8px; padding:8px 10px; border:0; background:#111827; color:#fff; border-radius:8px; cursor:pointer;">Claim</button>
-    </div>
-    <div style="border:1px solid #e5e7eb; border-radius:12px; padding:12px; background:#fff;">
-      <div style="font-weight:600;">Pickup box</div>
-      <div style="font-size:12px; color:#6b7280;">Bookstore B · Today</div>
-      <button style="margin-top:8px; padding:8px 10px; border:0; background:#111827; color:#fff; border-radius:8px; cursor:pointer;">Claim</button>
-    </div>
-    <div style="border:1px solid #e5e7eb; border-radius:12px; padding:12px; background:#fff;">
-      <div style="font-weight:600;">Drop-off at depot</div>
-      <div style="font-size:12px; color:#6b7280;">Canada Post · Tomorrow</div>
-      <button style="margin-top:8px; padding:8px 10px; border:0; background:#111827; color:#fff; border-radius:8px; cursor:pointer;">Claim</button>
-    </div>
-  </div>
-</div>
-
-
-<div style="font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif; max-width:720px; margin:24px auto;">
-  <h2 style="margin:0 0 8px;">Submit a Request</h2>
-  <p style="margin:0 0 16px; color:#4b5563;">For facility staff. Keep PII minimal and purpose-specific (MVP).</p>
-  <form style="display:grid; gap:12px;">
-    <label>
-      <div style="font-size:12px; color:#374151; font-weight:600;">Topic or Title</div>
-      <input type="text" placeholder="e.g., Introductory welding, Canadian history"
-             style="width:100%; padding:10px; border:1px solid #e5e7eb; border-radius:10px;">
-    </label>
-    <label>
-      <div style="font-size:12px; color:#374151; font-weight:600;">Reading Level (optional)</div>
-      <select style="width:100%; padding:10px; border:1px solid #e5e7eb; border-radius:10px;">
-        <option>Any</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option>
-      </select>
-    </label>
-    <label>
-      <div style="font-size:12px; color:#374151; font-weight:600;">Notes</div>
-      <textarea rows="3" placeholder="Constraints (e.g., no staples), preferred formats, etc."
-                style="width:100%; padding:10px; border:1px solid #e5e7eb; border-radius:10px;"></textarea>
-    </label>
-    <button type="button"
-            style="padding:10px 14px; background:#111827; color:#fff; border:0; border-radius:10px; cursor:pointer;">
-      Submit Request
-    </button>
-  </form>
-</div>
-
-<div style="font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif; max-width:760px; margin:24px auto;">
-  <h2 style="margin:0 0 8px;">Donation Intake</h2>
-  <p style="margin:0 0 16px; color:#4b5563;">Scan or enter ISBN; auto-fill metadata when possible.</p>
-  <div style="display:flex; gap:8px;">
-    <input placeholder="ISBN" style="flex:1; padding:10px; border:1px solid #e5e7eb; border-radius:10px;">
-    <button style="padding:10px 14px; background:#111827; color:#fff; border:0; border-radius:10px; cursor:pointer;">Add</button>
-  </div>
-  <ul style="margin-top:12px; padding-left:18px; color:#374151;">
-    <li>9781449369415 — *Fluent Python* — Condition: Good — Donor: Bookstore B</li>
-    <li>9780131103627 — *The C Programming Language* — Condition: Fair — Donor: J. Doe</li>
-  </ul>
-</div>
 
 
 
@@ -309,7 +69,45 @@ A minimal but usable MVP web application (backend + frontend) with:
 
 **Persona**:
 
-<!-- ===== Persona Cards for Ink & Iron (Q2) ===================================== -->
+> [!TIP]
+> Persona cards below use rich HTML and look best when viewed locally. For the full styled cards, download this file and open it locally (e.g., VS Code Markdown Preview). On GitHub, use the simplified cards right here.
+>
+> For the persona card, please download and read locally through this file: `Ink_and_Iron/deliverables/D1/planning.md` (use GitHub's Raw button to save).
+
+##### GitHub‑friendly Persona Cards (Simplified)
+
+— Officer Jaspreet Singh — Correctional Program Officer (Facility Staff, Secondary User)
+- Quote: “Get approved materials to people quickly, without breaking policy.”
+- Summary: Age 42; Work: Correctional Program Officer (Ontario); Family: Married, 1 child; Location: GTA; Character: Policy‑first helper
+- Traits: Detail‑oriented; Policy‑driven; Time‑pressed; Empathetic
+- Goals: Submit/approve requests quickly and correctly; Ensure shipments comply with facility policies; Track delivery outcomes with minimal back‑and‑forth
+- Frustrations: Paper forms and duplicate spreadsheets; Rejections due to unclear rules/packaging; Lack of status visibility once requests are sent
+- Preferred Channels: Email (primary) and phone for time‑sensitive items
+- Jump to rich HTML card: [View rich card](#persona-facility)
+
+— Maya Chen — Volunteer (Packer & Driver) (Volunteer, Secondary User)
+- Quote: “Give me clear tasks I can do between classes.”
+- Summary: Age 20; Work: UofT undergrad; part‑time retail; Location: Downtown Toronto; Character: Reliable helper, phone‑first
+- Traits: Mission‑driven; Phone‑first; Time‑boxed
+- Goals: Find and claim nearby tasks with clear instructions; Log hours and mark tasks complete on mobile; See real‑world impact
+- Frustrations: Unclear packaging/label rules → rework; Pickup windows that don’t match availability; Multiple sign‑ups across spreadsheets/forms
+- Preferred Channels: Email & Discord; admin dashboard for daily ops; weekly summary exports
+- Jump to rich HTML card: [View rich card](#persona-volunteer)
+
+— Alex Thompson — Incarcerated Learner (requests via Facility Staff) (Primary Beneficiary)
+- Quote: “Reading helps me learn, focus, and plan for what’s next.”
+- Summary: Age 28; Focus: GED prep, trades (intro welding), Canadian history; Access: Requests submitted by staff; Character: Growth‑oriented, resilient
+- Traits: Learner; Limited access; Policy constraints
+- Goals: Receive permitted books that match learning goals; Minimize wait time; Access study materials that support re‑entry and growth
+- Frustrations: Limited catalog visibility; Rejections due to packaging/policy rules; Long, uncertain timelines and few status updates
+- Preferred Channels: Indirect — staff‑submitted forms, facility mail; printed confirmations where appropriate
+- Jump to rich HTML card: [View rich card](#persona-incarcerated)
+
+
+<details>
+<summary><strong>Rich Persona Cards (HTML)</strong> — click to expand (best viewed locally)</summary>
+
+ <!-- ===== Persona Cards for Ink & Iron (Q2) ===================================== -->
 <!-- Palette: purple #7c3aed | light #ede9fe | gray text #57606a | borders #e6e8eb -->
 
 <!-- Helper: tiny component for sliders/progress bars -->
@@ -675,6 +473,7 @@ A minimal but usable MVP web application (backend + frontend) with:
   </div>
 </div>
 <!-- ============================================================================ -->
+</details>
 
 #### Q3: Why would your users choose your product? What are they using today to solve their problem/need?
 
@@ -780,90 +579,7 @@ As required, we shared our user stories with our partner for review. They confir
 
 * Hosting: Vercel (app) + Supabase (DB/auth/storage)
 
-<section id="q5-architecture" style="margin:18px 0;border:1px solid #e6e8eb;border-radius:14px;background:#fff;">
-  <div style="background:linear-gradient(90deg,#6f42c1,#7c3aed);color:#fff;padding:12px 16px;border-radius:14px 14px 0 0;font-weight:800;">
-    High‑Level Architecture (Build & Deploy)
-  </div>
-
-  <div style="padding:14px;display:flex;flex-wrap:wrap;gap:12px;align-items:stretch;">
-    <div style="flex:1 1 260px;min-width:260px;border:1px solid #e6e8eb;border-radius:12px;padding:12px;background:#fafaff;">
-      <div style="font-weight:800;color:#7c3aed;">Browser / Client</div>
-      <ul style="margin:8px 0 0 18px;color:#111827;">
-        <li>Responsive UI (Admin & Volunteer)</li>
-        <li>Auth session via Supabase</li>
-        <li>Calls Next.js API routes</li>
-      </ul>
-    </div>
-
-  <div style="flex:0 0 32px;display:flex;align-items:center;justify-content:center;font-size:26px;color:#7c3aed;">→</div>
-
-  <div style="flex:1 1 320px;min-width:320px;border:1px solid #e6e8eb;border-radius:12px;padding:12px;background:#ffffff;">
-    <div style="font-weight:800;color:#7c3aed;">Next.js App (Vercel)</div>
-      <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px;">
-        <div style="border:1px solid #e6e8eb;border-radius:10px;padding:8px;background:#f9fafb;">
-          <b>UI (React/Next)</b>
-          <div style="color:#57606a;font-size:13px;">Dashboards, forms, SSR where useful</div>
-        </div>
-        <div style="border:1px solid #e6e8eb;border-radius:10px;padding:8px;">
-          <b>API Routes (/api/*)</b>
-          <div style="color:#57606a;font-size:13px;">Validation + RBAC middleware</div>
-        </div>
-        <div style="border:1px solid #e6e8eb;border-radius:10px;padding:8px;">
-          <b>Prisma ORM</b>
-          <div style="color:#57606a;font-size:13px;">Typed access; migrations</div>
-        </div>
-      </div>
-      <div style="margin-top:10px;color:#57606a;font-size:13px;">CI/CD: GitHub Actions → Vercel (preview & production)</div>
-    </div>
-
-  <div style="flex:0 0 32px;display:flex;align-items:center;justify-content:center;font-size:26px;color:#7c3aed;">→</div>
-
-  <div style="flex:1 1 320px;min-width:320px;border:1px solid #e6e8eb;border-radius:12px;padding:12px;background:#fafaff;">
-      <div style="font-weight:800;color:#7c3aed;">Supabase Platform</div>
-      <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px;">
-        <div style="border:1px solid #e6e8eb;border-radius:10px;padding:8px;">
-          <b>Postgres (DB)</b>
-          <div style="color:#57606a;font-size:13px;">users, roles, books, donors, requests, allocations, tasks, shipments, facilities</div>
-        </div>
-        <div style="border:1px solid #e6e8eb;border-radius:10px;padding:8px;">
-          <b>Auth</b>
-          <div style="color:#57606a;font-size:13px;">Email magic link/password; roles: Admin, Volunteer, FacilityStaff</div>
-        </div>
-        <div style="border:1px solid #e6e8eb;border-radius:10px;padding:8px;">
-          <b>Row‑Level Security (RLS)</b>
-          <div style="color:#57606a;font-size:13px;">Privacy‑by‑default; minimal personal data</div>
-        </div>
-        <div style="border:1px solid #e6e8eb;border-radius:10px;padding:8px;">
-          <b>Storage</b>
-          <div style="color:#57606a;font-size:13px;">Receipts/labels (if needed)</div>
-        </div>
-        <div style="border:1px solid #e6e8eb;border-radius:10px;padding:8px;">
-          <b>Audit Logs</b>
-          <div style="color:#57606a;font-size:13px;">Who did what & when</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div style="padding:0 14px 14px 14px;display:flex;flex-wrap:wrap;gap:12px;">
-    <div style="flex:1 1 260px;min-width:260px;border:1px dashed #d0d7de;border-radius:12px;padding:12px;background:#fff;">
-      <div style="font-weight:800;color:#7c3aed;">Third‑Party (Stretch)</div>
-      <ul style="margin:8px 0 0 18px;color:#111827;">
-        <li>ISBN metadata (Open Library)</li>
-        <li>Map tiles for bookstore map</li>
-      </ul>
-    </div>
-    <div style="flex:1 1 260px;min-width:260px;border:1px solid #e6e8eb;border-radius:12px;padding:12px;background:#fff;">
-      <div style="font-weight:800;color:#7c3aed;">Security & Ops</div>
-      <ul style="margin:8px 0 0 18px;color:#111827;">
-        <li>HTTPS; secrets in Vercel</li>
-        <li>Backups via Supabase</li>
-        <li>Error logs (Vercel) + DB logs</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
+![High-Level Architecture](./figs/q5-architecture.svg)
 
 
 ----

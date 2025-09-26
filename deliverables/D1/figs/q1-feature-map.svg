@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img">
+  <defs>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6f42c1"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    
+  </defs>
+<rect x="0" y="0" width="1200" height="56" fill="url(#grad-purple)"/>
+<text x="20" y="36" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="start">MVP Feature Map</text>
+<rect x="20" y="76" width="278" height="200" rx="12" ry="12" fill="#fafaff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="32" y="100" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="800" fill="#7c3aed" text-anchor="start">Admin</text>
+<text x="32" y="120" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Inventory management</text>
+<text x="48" y="140" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">(add/list/filter)</text>
+<text x="32" y="160" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Request review</text>
+<text x="48" y="180" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">(approve/decline)</text>
+<text x="32" y="200" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Match books to requests</text>
+<text x="32" y="220" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Audit notes &amp; history</text>
+<rect x="314" y="76" width="278" height="200" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="326" y="100" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="800" fill="#7c3aed" text-anchor="start">Volunteer</text>
+<text x="326" y="120" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Task queue (claim &amp; complete)</text>
+<text x="326" y="140" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Basic hours log</text>
+<text x="326" y="160" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Shipping updates</text>
+<rect x="608" y="76" width="278" height="200" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="620" y="100" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="800" fill="#7c3aed" text-anchor="start">Facility Staff Form</text>
+<text x="620" y="120" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Submit on behalf of inmate</text>
+<text x="620" y="140" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Track status: Requested →</text>
+<text x="636" y="160" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">Approved/Declined → Fulfilled</text>
+<rect x="902" y="76" width="278" height="200" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="914" y="100" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="800" fill="#7c3aed" text-anchor="start">Delivery Tracking</text>
+<text x="914" y="120" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Lifecycle: Received → Packed →</text>
+<text x="930" y="140" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">Shipped → Delivered/Rejected</text>
+<text x="914" y="160" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Optional tracking number</text>
+<text x="914" y="180" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Reason required on rejection</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img">
+  <defs>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6f42c1"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+<rect x="0" y="0" width="1200" height="72" fill="url(#grad-purple)"/>
+<text x="20" y="44" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="start">Delivery Journey — Pack to Outcome</text>
+<rect x="20" y="92" width="250" height="160" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="32" y="118" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="700" fill="#7c3aed" text-anchor="start">1. Pack</text>
+<text x="32" y="142" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Create pack task</text>
+<text x="32" y="162" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Assign/claim by volunteer</text>
+<text x="32" y="182" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Generate packing list</text>
+<text x="282.0" y="178.0" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="24" font-weight="800" fill="#7c3aed" text-anchor="middle">→</text>
+<rect x="294" y="92" width="250" height="160" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="306" y="118" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="700" fill="#7c3aed" text-anchor="start">2. Ship</text>
+<text x="306" y="142" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Attach tracking (optional)</text>
+<text x="306" y="162" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Status: Shipped</text>
+<text x="306" y="182" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Notify facility contact (opt.)</text>
+<text x="556.0" y="178.0" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="24" font-weight="800" fill="#7c3aed" text-anchor="middle">→</text>
+<rect x="568" y="92" width="250" height="160" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="580" y="118" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="700" fill="#7c3aed" text-anchor="start">3. Outcome</text>
+<text x="580" y="142" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Delivered — mark complete</text>
+<text x="580" y="162" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Rejected — record reason</text>
+<text x="580" y="182" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Auto-audit entry created</text>
+<text x="830.0" y="178.0" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="24" font-weight="800" fill="#7c3aed" text-anchor="middle">→</text>
+<rect x="842" y="92" width="250" height="160" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="854" y="118" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="700" fill="#7c3aed" text-anchor="start">4. Close Out</text>
+<text x="854" y="142" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Inventory decrement</text>
+<text x="854" y="162" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Update request as fulfilled</text>
+<text x="854" y="182" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Basic reporting updated</text>
+</svg>

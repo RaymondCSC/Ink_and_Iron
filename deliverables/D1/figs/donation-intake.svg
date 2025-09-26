@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="230" viewBox="0 0 760 230" role="img">
+<text x="24" y="44" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="18" font-weight="700" fill="#0b0c0d" text-anchor="start" style="font-style:normal;">Donation Intake</text>
+<text x="24" y="68" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#4b5563" text-anchor="start" style="font-style:normal;">Scan or enter ISBN; auto-fill metadata when possible.</text>
+<rect x="24" y="76" width="604" height="40" rx="10" ry="10" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<text x="36" y="102" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7280" text-anchor="start" style="font-style:normal;">ISBN</text>
+<rect x="636" y="76" width="100" height="40" rx="10" ry="10" fill="#111827" stroke="#111827" stroke-width="1"/>
+<text x="686" y="102" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" style="font-style:normal;">Add</text>
+<text x="42" y="128" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start" style="font-style:normal;">• 9781449369415 — Fluent Python — Condition: Good — Donor: Bookstore B</text>
+<text x="42" y="152" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start" style="font-style:normal;">• 9780131103627 — The C Programming Language — Condition: Fair — Donor: J. Doe</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img">
+  <defs>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6f42c1"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    
+  </defs>
+<rect x="0" y="0" width="1200" height="56" fill="url(#grad-purple)"/>
+<text x="20" y="36" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="start">Facility‑Submitted Request — Journey</text>
+<rect x="20" y="100" width="250" height="160" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="32" y="126" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="700" fill="#7c3aed" text-anchor="start">1. Submit</text>
+<text x="32" y="150" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Enter inmate ref/ID</text>
+<text x="48" y="170" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">(minimized)</text>
+<text x="32" y="190" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Subject/needs &amp; facility</text>
+<text x="48" y="210" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">constraints</text>
+<text x="282.0" y="186.0" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="22" font-weight="700" fill="#7c3aed" text-anchor="middle">→</text>
+<rect x="294" y="100" width="250" height="160" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="306" y="126" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="700" fill="#7c3aed" text-anchor="start">2. Decide &amp; Allocate</text>
+<text x="306" y="150" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Approve / decline with</text>
+<text x="322" y="170" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">reason</text>
+<text x="306" y="190" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Match books from inventory</text>
+<text x="556.0" y="186.0" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="22" font-weight="700" fill="#7c3aed" text-anchor="middle">→</text>
+<rect x="568" y="100" width="250" height="160" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="580" y="126" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="700" fill="#7c3aed" text-anchor="start">3. Fulfill</text>
+<text x="580" y="150" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Create pack task</text>
+<text x="580" y="170" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Volunteer claims &amp; packs</text>
+<text x="580" y="190" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Ship with optional tracking</text>
+<text x="830.0" y="186.0" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="22" font-weight="700" fill="#7c3aed" text-anchor="middle">→</text>
+<rect x="842" y="100" width="250" height="160" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="854" y="126" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="700" fill="#7c3aed" text-anchor="start">4. Complete</text>
+<text x="854" y="150" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Delivered / Rejected (note</text>
+<text x="870" y="170" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">required)</text>
+<text x="854" y="190" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Audit &amp; basic reporting</text>
+</svg>

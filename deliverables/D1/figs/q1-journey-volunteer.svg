@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img">
+  <defs>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6f42c1"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+<rect x="0" y="0" width="1200" height="72" fill="url(#grad-purple)"/>
+<text x="20" y="44" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="start">Volunteer Journey — Claim to Complete</text>
+<rect x="20" y="92" width="250" height="160" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="32" y="118" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="700" fill="#7c3aed" text-anchor="start">1. Onboard</text>
+<text x="32" y="142" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Create account</text>
+<text x="32" y="162" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Confirm role (Volunteer)</text>
+<text x="32" y="182" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Optional: agree to guidelines</text>
+<text x="282.0" y="178.0" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="24" font-weight="800" fill="#7c3aed" text-anchor="middle">→</text>
+<rect x="294" y="92" width="250" height="160" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="306" y="118" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="700" fill="#7c3aed" text-anchor="start">2. Claim Task</text>
+<text x="306" y="142" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Browse queue (pack/pickup/drop-off)</text>
+<text x="306" y="162" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Claim &amp; see details</text>
+<text x="306" y="182" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Contact info if needed</text>
+<text x="556.0" y="178.0" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="24" font-weight="800" fill="#7c3aed" text-anchor="middle">→</text>
+<rect x="568" y="92" width="250" height="160" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="580" y="118" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="700" fill="#7c3aed" text-anchor="start">3. Do Task</text>
+<text x="580" y="142" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Pack or deliver</text>
+<text x="580" y="162" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Mark status: Started → Done</text>
+<text x="580" y="182" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Leave note/photos (opt.)</text>
+<text x="830.0" y="178.0" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="24" font-weight="800" fill="#7c3aed" text-anchor="middle">→</text>
+<rect x="842" y="92" width="250" height="160" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="854" y="118" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="700" fill="#7c3aed" text-anchor="start">4. Log Hours</text>
+<text x="854" y="142" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Enter time spent</text>
+<text x="854" y="162" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Submit for admin review</text>
+<text x="854" y="182" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#374151" text-anchor="start">• Hours summary visible in portal</text>
+</svg>

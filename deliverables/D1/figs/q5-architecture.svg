@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img">
+  <defs>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6f42c1"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    
+  </defs>
+<rect x="0" y="0" width="1200" height="56" fill="url(#grad-purple)"/>
+<text x="20" y="36" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="start">High‑Level Architecture (Build &amp; Deploy)</text>
+<rect x="20" y="90" width="340" height="300" rx="12" ry="12" fill="#fafaff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="32" y="118" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="800" fill="#7c3aed" text-anchor="start">Browser / Client</text>
+<text x="32" y="144" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">• Responsive UI (Admin &amp; Volunteer)</text>
+<text x="32" y="164" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">• Auth session via Supabase</text>
+<text x="32" y="184" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">• Calls Next.js API routes</text>
+<text x="372.0" y="240.0" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="28" font-weight="700" fill="#7c3aed" text-anchor="middle">→</text>
+<rect x="384" y="90" width="340" height="300" rx="12" ry="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="396" y="118" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="800" fill="#7c3aed" text-anchor="start">Next.js App (Vercel)</text>
+<rect x="396" y="146" width="316" height="64" rx="10" ry="10" fill="#f9fafb" stroke="#e6e8eb" stroke-width="1"/>
+<text x="408" y="170" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="700" fill="#111827" text-anchor="start">UI (React/Next)</text>
+<text x="408" y="190" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" font-weight="normal" fill="#57606a" text-anchor="start">Dashboards, forms, SSR where useful</text>
+<rect x="396" y="220" width="316" height="64" rx="10" ry="10" fill="#f9fafb" stroke="#e6e8eb" stroke-width="1"/>
+<text x="408" y="244" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="700" fill="#111827" text-anchor="start">API Routes (/api/*)</text>
+<text x="408" y="264" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" font-weight="normal" fill="#57606a" text-anchor="start">Validation + RBAC middleware</text>
+<rect x="396" y="294" width="316" height="64" rx="10" ry="10" fill="#f9fafb" stroke="#e6e8eb" stroke-width="1"/>
+<text x="408" y="318" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="700" fill="#111827" text-anchor="start">Prisma ORM</text>
+<text x="408" y="338" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" font-weight="normal" fill="#57606a" text-anchor="start">Typed access; migrations</text>
+<text x="396" y="374" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" font-weight="normal" fill="#57606a" text-anchor="start">CI/CD: GitHub Actions → Vercel (preview &amp; production)</text>
+<text x="736.0" y="240.0" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="28" font-weight="700" fill="#7c3aed" text-anchor="middle">→</text>
+<rect x="748" y="90" width="340" height="300" rx="12" ry="12" fill="#fafaff" stroke="#e6e8eb" stroke-width="1"/>
+<text x="760" y="118" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="800" fill="#7c3aed" text-anchor="start">Supabase Platform</text>
+<text x="760" y="144" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">• Postgres (DB): users, roles, books,</text>
+<text x="776" y="164" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">donors, requests, allocations, tasks,</text>
+<text x="776" y="184" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">shipments, facilities</text>
+<text x="760" y="204" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">• Auth: Email magic link/password;</text>
+<text x="776" y="224" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">roles: Admin, Volunteer, FacilityStaff</text>
+<text x="760" y="244" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">• Row‑Level Security (RLS):</text>
+<text x="776" y="264" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">Privacy‑by‑default; minimal personal</text>
+<text x="776" y="284" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">data</text>
+<text x="760" y="304" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">• Storage: Receipts/labels (if needed)</text>
+<text x="760" y="324" font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">• Audit Logs: Who did what &amp; when</text>
+</svg>
